@@ -1,4 +1,5 @@
 # telu-telu-boy-hp
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29b0d5bc-641e-4f93-ae8a-8ea0481ba03d/deploy-status)](https://app.netlify.com/sites/admiring-rosalind-7689fb/deploys)
 
 ## Build Setup
 
