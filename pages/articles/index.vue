@@ -1,6 +1,13 @@
 <template>
   <section class="index">
-    <h1>ここがTOP PAGEです</h1>
+    <card
+      v-for="(post,i ) in posts"
+      :key="i"
+      :id="post.sys.id"
+      :title="post.fields.title"
+      :body="post.fields.body"
+      :date="post.sys.updatedAt"
+    />
   </section>
 </template>
 
