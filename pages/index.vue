@@ -1,6 +1,7 @@
 <template>
   <section class="index">
     <h1>ここがTOP PAGEです</h1>
+    <nuxt-link :to="`/articles`">記事一覧へ</nuxt-link>
   </section>
 </template>
 
