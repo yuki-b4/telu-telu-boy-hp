@@ -1,9 +1,14 @@
 
 <template>
-  <nuxt-link :to="`/articles/${id}`">
+  <nuxt-link
+    :to="{ name: 'blog-slug', params: {
+      sys: id
+    }}"
+    class="wrapper"
+  >
     <article class="card">
       <h1 class="card_title">{{ title }}</h1>
-      <p class="card_text">{{ body.content[0].content[0].value }}</p>
+      <p class="card_text">{{ id }}</p>
       <p class="card_date">{{ date }}</p>
     </article>
   </nuxt-link>
@@ -11,15 +16,11 @@
 <script>
 export default {
   props: {
-    id: {
-      type: String,
-      default: ''
-    },
     title: {
       type: String,
       default: ''
     },
-    body: {
+    id: {
       type: String,
       default: ''
     },
